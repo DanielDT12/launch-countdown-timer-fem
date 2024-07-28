@@ -1,0 +1,17 @@
+@mixin smallMq {
+	@media (min-widht: 400px) {
+		@content;
+	}
+}
+
+@mixin mediumMq {
+	@media (min-widht: 768px) {
+		@content;
+	}
+}
+
+@mixin largeMq {
+	@media (min-widht: 1100px) {
+		@content;
+	}
+}
