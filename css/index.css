@@ -1,3 +1,19 @@
+:root {
+  /* PRIMARY COLORS */
+  --clr-primary-gray: hsl(237, 18%, 59%);
+  --clr-primary-pink: hsl(345, 95%, 68%);
+  --clr-primary-purple: hsl(268, 21%, 14%);
+  /* NEUTRAL COLORS */
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-600: hsl(236, 21%, 26%);
+  --clr-neutral-800: hsl(235, 16%, 14%);
+  --clr-neutral-900: hsl(234, 17%, 12%);
+  /* FONT */
+  --ff-global: "Red Hat Text", sans-serif;
+  --fw-bold: 700;
+  --fs-400: 0.875rem;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -94,19 +110,14 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-:root {
-  /* PRIMARY COLORS */
-  --clr-primary-gray: hsl(237, 18%, 59%);
-  --clr-primary-pink: hsl(345, 95%, 68%);
-  /* NEUTRAL COLORS */
-  --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-neutral-600: hsl(236, 21%, 26%);
-  --clr-neutral-800: hsl(235, 16%, 14%);
-  --clr-neutral-900: hsl(234, 17%, 12%);
-  /* FONT */
-  --ff-global: "Red Hat Text", sans-serif;
-  --fw-bold: 700;
-  --fs-400: 0.875rem;
+html {
+  color-scheme: dark light;
+}
+
+body {
+  font-family: var(--ff-global);
+  font-size: var(--fs-400);
+  background-image: linear-gradient(180deg, var(--clr-neutral-800), var(--clr-primary-purple));
 }
 
 /*# sourceMappingURL=index.css.map */
