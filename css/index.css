@@ -120,4 +120,14 @@ body {
   background-image: linear-gradient(180deg, var(--clr-neutral-800), var(--clr-primary-purple));
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /*# sourceMappingURL=index.css.map */
