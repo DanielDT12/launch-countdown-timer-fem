@@ -1,0 +1,16 @@
+.footer {
+	&__social-list {
+		list-style: none;
+		gap: 2rem;
+	}
+
+	&__link-svg {
+		fill: var(--clr-primary-gray);
+		cursor: pointer;
+		transition: fill 300ms ease;
+	}
+
+	&__link-svg:is(:hover, :focus) {
+		fill: var(--clr-primary-pink);
+	}
+}
