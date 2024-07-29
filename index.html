@@ -16,20 +16,32 @@
 	</head>
 	<body>
 		<main class="counter">
-			<div class="counter__container">
+			<div class="counter__container | flex-column">
 				<h1 class="counter__title">We're launching soon</h1>
-				<div class="counter__timer">
-					<div class="counter__cards">
-						<p>Days</p>
+				<div class="counter__timer | flex-center">
+					<div class="counter__cards | flex-column">
+						<div class="counter__timer-cell">
+							<p class="counter__number" id="js-days">00</p>
+						</div>
+						<p class="counter__text">Days</p>
 					</div>
-					<div class="counter__cards">
-						<p>Hours</p>
+					<div class="counter__cards | flex-column">
+						<div class="counter__timer-cell">
+							<p class="counter__number" id="js-hours">00</p>
+						</div>
+						<p class="counter__text">Hours</p>
 					</div>
-					<div class="counter__cards">
-						<p>Minutes</p>
+					<div class="counter__cards | flex-column">
+						<div class="counter__timer-cell">
+							<p class="counter__number" id="js-minutes">00</p>
+						</div>
+						<p class="counter__text">Minutes</p>
 					</div>
-					<div class="counter__cards">
-						<p>Seconds</p>
+					<div class="counter__cards | flex-column">
+						<div class="counter__timer-cell">
+							<p class="counter__number" id="js-seconds">00</p>
+						</div>
+						<p class="counter__text">Seconds</p>
 					</div>
 				</div>
 			</div>
