@@ -115,9 +115,37 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: var(--ff-global);
   font-size: var(--fs-400);
-  background-image: linear-gradient(180deg, var(--clr-neutral-800), var(--clr-primary-purple));
+  background: url(/public/images/bg-stars.svg), linear-gradient(180deg, var(--clr-neutral-800), var(--clr-primary-purple));
+}
+
+.counter {
+  text-align: center;
+  flex: 1;
+}
+
+.footer {
+  padding: 5rem;
+  background: url(/public/images/pattern-hills.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__social-list {
+  list-style: none;
+  gap: 2rem;
+}
+.footer__link-svg {
+  fill: var(--clr-primary-gray);
+  cursor: pointer;
+  transition: fill 300ms ease;
+}
+.footer__link-svg:is(:hover, :focus) {
+  fill: var(--clr-primary-pink);
 }
 
 .visually-hidden {
@@ -128,6 +156,28 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */
