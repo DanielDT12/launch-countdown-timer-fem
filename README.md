@@ -1,1 +1,1 @@
-# Front end mentor oppgave.
+# Frontend mentor oppgave.
