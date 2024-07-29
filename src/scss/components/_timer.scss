@@ -1,3 +1,5 @@
+@use "../abstracts/media-query" as *;
+
 .counter {
 	&__container {
 		gap: 5rem;
@@ -5,25 +7,50 @@
 
 	&__timer {
 		gap: 2rem;
+		padding: 0 2rem;
+
+		@include mediumMq() {
+			gap: 1rem;
+			padding: 0 1rem;
+		}
 	}
 
 	&__title {
+		padding: 0 1rem;
 		font-size: 1.375rem;
 		font-weight: 700;
 		color: var(--clr-neutral-100);
 		text-transform: uppercase;
 		letter-spacing: 0.5rem;
+
+		@include smallMq() {
+			font-size: 1.125rem;
+		}
 	}
 
 	&__cards {
 		gap: 1.5rem;
+
+		@include smallMq() {
+			gap: 0.5rem;
+		}
 	}
 
 	&__text {
 		color: var(--clr-primary-gray);
+		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.3rem;
-		font-weight: 700;
+
+		@include mediumMq() {
+			font-size: 0.75rem;
+			letter-spacing: 0.2rem;
+		}
+
+		@include smallMq() {
+			font-size: 0.675rem;
+			letter-spacing: 0;
+		}
 	}
 
 	&__timer-cell {
@@ -41,6 +68,14 @@
 			var(--clr-neutral-600) 100%
 		);
 		box-shadow: 0 0.6rem 0 var(--clr-neutral-900);
+
+		@include mediumMq() {
+			width: 6rem;
+		}
+
+		@include smallMq() {
+			width: 4rem;
+		}
 	}
 
 	&__timer-cell::before,
@@ -54,6 +89,10 @@
 		top: calc(50% - var(--timer-cell-pseudo) / 2);
 		border-radius: 100vw;
 		background-color: var(--clr-neutral-900);
+
+		@include smallMq() {
+			--timer-cell-pseudo: 0.5rem;
+		}
 	}
 
 	&__timer-cell::before {
@@ -81,5 +120,14 @@
 		);
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text;
+		background-clip: text;
+
+		@include mediumMq() {
+			font-size: 3rem;
+		}
+
+		@include smallMq() {
+			font-size: 2rem;
+		}
 	}
 }
