@@ -27,8 +27,11 @@
 	}
 
 	&__timer-cell {
+		display: grid;
+		place-content: center;
 		position: relative;
-		padding: 0.5rem 1rem;
+		width: 9rem;
+		padding: 0.5rem;
 		border-radius: 0.5em;
 		background-image: linear-gradient(
 			to bottom,
