@@ -158,22 +158,52 @@ body {
 }
 .counter__timer {
   gap: 2rem;
+  padding: 0 2rem;
+}
+@media (max-width: 768px) {
+  .counter__timer {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
 }
 .counter__title {
+  padding: 0 1rem;
   font-size: 1.375rem;
   font-weight: 700;
   color: var(--clr-neutral-100);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
+@media (max-width: 500px) {
+  .counter__title {
+    font-size: 1.125rem;
+  }
+}
 .counter__cards {
   gap: 1.5rem;
 }
+@media (max-width: 500px) {
+  .counter__cards {
+    gap: 0.5rem;
+  }
+}
 .counter__text {
   color: var(--clr-primary-gray);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .counter__text {
+    font-size: 0.75rem;
+    letter-spacing: 0.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .counter__text {
+    font-size: 0.675rem;
+    letter-spacing: 0;
+  }
 }
 .counter__timer-cell {
   display: grid;
@@ -185,6 +215,16 @@ body {
   background-image: linear-gradient(to bottom, var(--clr-neutral-700) 0%, var(--clr-neutral-700) 50%, var(--clr-neutral-600) 50%, var(--clr-neutral-600) 100%);
   box-shadow: 0 0.6rem 0 var(--clr-neutral-900);
 }
+@media (max-width: 768px) {
+  .counter__timer-cell {
+    width: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  .counter__timer-cell {
+    width: 4rem;
+  }
+}
 .counter__timer-cell::before, .counter__timer-cell::after {
   --timer-cell-pseudo: 0.75rem;
   content: "";
@@ -194,6 +234,11 @@ body {
   top: calc(50% - var(--timer-cell-pseudo) / 2);
   border-radius: 100vw;
   background-color: var(--clr-neutral-900);
+}
+@media (max-width: 500px) {
+  .counter__timer-cell::before, .counter__timer-cell::after {
+    --timer-cell-pseudo: 0.5rem;
+  }
 }
 .counter__timer-cell::before {
   /* litt hacky posisjon, burde finne en annen løsning */
@@ -212,6 +257,17 @@ body {
   background: linear-gradient(to bottom, var(--clr-primary-dark-pink) 0%, var(--clr-primary-dark-pink) 50%, var(--clr-primary-pink) 50%, var(--clr-primary-pink) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
+}
+@media (max-width: 768px) {
+  .counter__number {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .counter__number {
+    font-size: 2rem;
+  }
 }
 
 .visually-hidden {
