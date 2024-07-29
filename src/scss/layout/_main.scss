@@ -1,4 +1,6 @@
 .counter {
+	display: grid;
+	place-content: center;
 	text-align: center;
 	flex: 1;
 }
