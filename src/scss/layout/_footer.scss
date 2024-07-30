@@ -1,5 +1,5 @@
 .footer {
-	padding: 5rem;
+	padding: clamp(3rem, 10%, 7.5rem);
 	background: url(/public/images/pattern-hills.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
